@@ -19,9 +19,7 @@ class _MainScreenState extends State<MainScreen> with NavigatorManager {
     });
   }
 
-  void refreshView() {
-    setState(() {});
-  }
+ 
 
   void delete() {
     if (myList.isNotEmpty) {
