@@ -19,8 +19,6 @@ class _MainScreenState extends State<MainScreen> with NavigatorManager {
     });
   }
 
- 
-
   void delete() {
     if (myList.isNotEmpty) {
       setState(() {
@@ -76,8 +74,8 @@ class _MainScreenState extends State<MainScreen> with NavigatorManager {
     return ElevatedButton.icon(
         icon: const Icon(Icons.navigate_next_outlined),
         style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.resolveWith((states) {
-          if (states.contains(MaterialState.pressed)) {
+            backgroundColor: WidgetStateProperty.resolveWith((states) {
+          if (states.contains(WidgetState.pressed)) {
             return Colors.lightGreenAccent;
           }
           return null;
